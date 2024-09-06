@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "lolo_backend": {
+      "main": "src/lolo_backend/main.mo",
+      "type": "motoko"
+    },
+    "lolo_frontend": {
+      "dependencies": [
+        "lolo_backend"
+      ],
+      "source": [
+        "src/lolo_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "lolo_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
